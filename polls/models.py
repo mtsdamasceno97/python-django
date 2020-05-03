@@ -23,3 +23,8 @@ class Usuario(models.Model):
     max_length = 100,
     choices = sexo_Choices
   )
+
+
+def __str__(self):
+  return self.nome
+

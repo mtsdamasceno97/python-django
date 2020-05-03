@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    {% for i in usuarios %}
+
+    <ul>
+      <li>Nome: {{i.nome}}</li>
+      <li>Sobronome: {{i.sobrenome}}</li>
+      <li>Sexo: {{i.sexo}}</li>
+    </ul>
+
+    {% endfor %}
+    <a href="{% url'deletar'}"></a>
+  </body>
+</html>

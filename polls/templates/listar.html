@@ -12,9 +12,10 @@
       <li>Nome: {{i.nome}}</li>
       <li>Sobronome: {{i.sobrenome}}</li>
       <li>Sexo: {{i.sexo}}</li>
+      <li><a href="{% url 'alterar' id=i.id %}">Alterar</a></li>
+      <a href="{% url 'deletar' id=i.id %}">Deletar</a>
     </ul>
 
     {% endfor %}
-    <a href="{% url'deletar'}"></a>
   </body>
 </html>
